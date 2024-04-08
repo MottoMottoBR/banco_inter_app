@@ -22,7 +22,16 @@ class MyHomePage extends StatelessWidget {
             logoTopoMenu(),
 
             // Seleção de conta Brasil Ou Global
-            MenuConstasBreUa()
+            MenuConstasBreUa(),
+
+            /*
+            // Saldo E Menus Pix.
+            // devido a quantidade de botoões e opções
+            // todo conteudo sera criado dentro da estrutra abaixo
+            // com seus componentes
+            // separados
+              */
+
           ],
         ),
       ),
