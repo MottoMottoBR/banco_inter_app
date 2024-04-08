@@ -3,16 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../styles/app_cores.dart';
 
-class MenuConstasBreUa extends StatefulWidget {
+class MenuConstasBreUa extends StatelessWidget {
   const MenuConstasBreUa({
     super.key,
   });
 
-  @override
-  State<MenuConstasBreUa> createState() => _MenuConstasBreUaState();
-}
-
-class _MenuConstasBreUaState extends State<MenuConstasBreUa> {
   @override
   Widget build(BuildContext context) {
     return Row(
