@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../components/logo_topo_menu.dart';
 import '../components/menu_contas_br_eua.dart';
+import '../components/menu_saldo_pix.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -21,17 +22,15 @@ class MyHomePage extends StatelessWidget {
             // Logo Inter e botões do topo Principal
             logoTopoMenu(),
 
-            // Seleção de conta Brasil Ou Global
+            // Seleção de conta Brasil / Global
             MenuConstasBreUa(),
 
-            /*
-            // Saldo E Menus Pix.
-            // devido a quantidade de botoões e opções
-            // todo conteudo sera criado dentro da estrutra abaixo
-            // com seus componentes
-            // separados
-              */
+            SizedBox(
+              height: 15,
+            ),
 
+            // Saldo E Menus Pix.
+            MenuSaldoPix(),
           ],
         ),
       ),
