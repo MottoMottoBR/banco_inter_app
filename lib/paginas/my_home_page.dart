@@ -5,8 +5,9 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../components/logo_topo_menu.dart';
-import '../components/menu_contas_br_eua.dart';
+import '../menus/menu_contas_br_eua.dart';
 import '../components/menu_saldo_pix.dart';
+import '../menus/menu_invester_shopping.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -31,6 +32,13 @@ class MyHomePage extends StatelessWidget {
 
             // Saldo E Menus Pix.
             MenuSaldoPix(),
+
+            SizedBox(
+              height: 15,
+            ),
+
+            //Menu Investir , Sopping e outros
+            MenuInvestirShopping()
           ],
         ),
       ),
