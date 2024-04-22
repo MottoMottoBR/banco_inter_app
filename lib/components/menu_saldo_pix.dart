@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'botoes_pix_boleto_cartoes.dart';
+
 class MenuSaldoPix extends StatelessWidget {
   const MenuSaldoPix({super.key});
 
@@ -24,7 +26,43 @@ class MenuSaldoPix extends StatelessWidget {
               style: GoogleFonts.roboto(
                 fontSize: 18,
               ),
-            )
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            // Saldo
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      r'R$',
+                      style: GoogleFonts.roboto(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 8,
+                    ),
+                    Text(
+                      r'47,50',
+                      style: GoogleFonts.roboto(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
+                ),
+                const Icon(Icons.arrow_forward_ios_rounded)
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            //Botões Pix Pagar e Cartões
+            const BotoesPixBoleto(),
           ],
         ),
       ),
