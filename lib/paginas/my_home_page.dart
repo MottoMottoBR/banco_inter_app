@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../components/banner_investimento.dart';
 import '../components/logo_topo_menu.dart';
 import '../menus/menu_contas_br_eua.dart';
-import '../components/menu_saldo_pix.dart';
-import '../menus/menu_invester_shopping.dart';
+import '../menus/menu_saldo_pix.dart';
+
+import '../widget/botoes_investir_shopping.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -38,7 +40,14 @@ class MyHomePage extends StatelessWidget {
             ),
 
             //Menu Investir , Sopping e outros
-            MenuInvestirShopping()
+            BotoesInvertirShopping(),
+
+            SizedBox(
+              height: 15,
+            ),
+
+            //Banner de investimento
+            BannerInvestimento(),
           ],
         ),
       ),

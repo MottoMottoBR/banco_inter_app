@@ -5,56 +5,158 @@ import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BotoesInvertirShopping extends StatefulWidget {
+class BotoesInvertirShopping extends StatelessWidget {
   const BotoesInvertirShopping({super.key});
 
   @override
-  State<BotoesInvertirShopping> createState() => _BotoesInvertirShoppingState();
-}
-
-class _BotoesInvertirShoppingState extends State<BotoesInvertirShopping> {
-  @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          width: 60,
-          height: 60,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.pinkAccent),
-          child: Stack(
-            children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
-                    FontAwesomeIcons.shopify,
+        Column(
+          children: [
+            Container(
+              width: 60,
+              height: 60,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: AppCores.BrancoCards),
+              child: const Center(
+                child: Icon(
+                  Icons.trending_up_outlined,
+                ),
+              ),
+            ),
+            Column(
+              children: [
+                const SizedBox(
+                  height: 12,
+                ),
+                Text(
+                  'Investir',
+                  style: GoogleFonts.lexendDeca(
+                    textStyle: const TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.w500),
                   ),
+                ),
+              ],
+            )
+          ],
+        ),
+        Column(
+          children: [
+            SizedBox(
+              height: 87,
+              child: Stack(
+                children: [
                   Container(
-                    width: 50,
-                    height: 20,
+                    width: 60,
+                    height: 60,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: Colors.black,
+                        borderRadius: BorderRadius.circular(10),
+                        color: AppCores.BrancoCards),
+                    child: const Center(
+                      child: Icon(
+                        Icons.shopping_bag_outlined,
+                      ),
                     ),
-                    child: Center(
-                      child: Text(
-                        'Oferta',
-                        style: GoogleFonts.lato(
-                            textStyle: const TextStyle(color: Colors.white)),
+                  ),
+                  Positioned(
+                    top: 50,
+                    left: 6,
+                    child: Container(
+                      width: 45,
+                      height: 18,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.black,
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Oferta',
+                          style: GoogleFonts.lexendDeca(
+                            textStyle: const TextStyle(
+                                color: Colors.white, fontSize: 11),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 1,
+                    child: Text(
+                      'Shopping',
+                      style: GoogleFonts.lexendDeca(
+                        textStyle: const TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
                 ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-        Text(
-          'Investir',
-          style: GoogleFonts.aBeeZee(),
-        )
+        Column(
+          children: [
+            Container(
+              width: 60,
+              height: 60,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: AppCores.BrancoCards),
+              child: const Center(
+                child: Icon(
+                  FontAwesomeIcons.gift,
+                ),
+              ),
+            ),
+            Column(
+              children: [
+                const SizedBox(
+                  height: 12,
+                ),
+                Text(
+                  'Gift Card',
+                  style: GoogleFonts.lexendDeca(
+                    textStyle: const TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+        Column(
+          children: [
+            Container(
+              width: 60,
+              height: 60,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: AppCores.BrancoCards),
+              child: const Center(
+                child: Icon(
+                  Icons.more_horiz,
+                ),
+              ),
+            ),
+            Column(
+              children: [
+                const SizedBox(
+                  height: 12,
+                ),
+                Text(
+                  'Mostrar mais',
+                  style: GoogleFonts.lexendDeca(
+                    textStyle: const TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
       ],
     );
   }
