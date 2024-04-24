@@ -19,10 +19,8 @@ class BannerInvestimento extends StatelessWidget {
         decoration: BoxDecoration(
             color: Colors.green, borderRadius: BorderRadius.circular(15)),
         child: Stack(
-
           children: [
             Positioned(
-
               child: Container(
                 height: 150,
                 decoration: BoxDecoration(
