@@ -18,37 +18,40 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: AppCores.CinzaBackground,
-      body: Padding(
-        padding: EdgeInsets.all(20.0),
-        child: Column(
-          children: [
-            // Logo Inter e botões do topo Principal
-            logoTopoMenu(),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Column(
+            children: [
+              // Logo Inter e botões do topo Principal
+              logoTopoMenu(),
 
-            // Seleção de conta Brasil / Global
-            MenuConstasBreUa(),
+              // Seleção de conta Brasil / Global
+              MenuConstasBreUa(),
 
-            SizedBox(
-              height: 15,
-            ),
+              SizedBox(
+                height: 15,
+              ),
 
-            // Saldo E Menus Pix.
-            MenuSaldoPix(),
+              // Saldo E Menus Pix.
+              MenuSaldoPix(),
 
-            SizedBox(
-              height: 15,
-            ),
+              SizedBox(
+                height: 15,
+              ),
 
-            //Menu Investir , Sopping e outros
-            BotoesInvertirShopping(),
+              //Menu Investir , Sopping e outros
+              BotoesInvertirShopping(),
 
-            SizedBox(
-              height: 15,
-            ),
+              SizedBox(
+                height: 30,
+              ),
 
-            //Banner de investimento
-            BannerInvestimento(),
-          ],
+              //Banner de investimento
+              BannerInvestimento(),
+            ],
+          ),
         ),
       ),
     );

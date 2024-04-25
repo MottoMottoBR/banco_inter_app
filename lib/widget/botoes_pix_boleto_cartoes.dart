@@ -18,7 +18,7 @@ class _BotoesPixBoletoState extends State<BotoesPixBoleto> {
     return Row(
       children: [
         Container(
-          width: 100,
+          width: 95,
           height: 45,
           decoration: const BoxDecoration(
             color: AppCores.CinzaBackground,

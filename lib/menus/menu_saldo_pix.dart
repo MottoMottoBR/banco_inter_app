@@ -22,14 +22,15 @@ class MenuSaldoPix extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(10.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               'Conta Digital',
               style: GoogleFonts.roboto(
-                fontSize: 18,
+                fontSize: 15,
+
               ),
             ),
             const SizedBox(

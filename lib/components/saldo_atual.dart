@@ -27,9 +27,9 @@ class _SaldoAtualState extends State<SaldoAtual> {
               width: 8,
             ),
             Text(
-              r'47,50',
+              r'129.947,53',
               style: GoogleFonts.roboto(
-                fontSize: 30,
+                fontSize: 25,
                 fontWeight: FontWeight.w700,
               ),
             ),
