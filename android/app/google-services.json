@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1078229229574",
+    "firebase_url": "https://bankapp-f03ff-default-rtdb.firebaseio.com",
+    "project_id": "bankapp-f03ff",
+    "storage_bucket": "bankapp-f03ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078229229574:android:dad9db2c6d5ff6af216387",
+        "android_client_info": {
+          "package_name": "com.example.bancointerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8sZtk7o1tQUDwkoyRpU8p4XNdUwSY0NE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
