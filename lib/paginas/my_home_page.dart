@@ -30,23 +30,16 @@ class MyHomePage extends StatelessWidget {
               // Seleção de conta Brasil / Global
               MenuConstasBreUa(),
 
-              SizedBox(
-                height: 15,
-              ),
+              SizedBox(height: 15),
 
               // Saldo E Menus Pix.
               MenuSaldoPix(),
 
-              SizedBox(
-                height: 15,
-              ),
-
+              SizedBox(height: 15),
               //Menu Investir , Sopping e outros
               BotoesInvertirShopping(),
 
-              SizedBox(
-                height: 30,
-              ),
+              SizedBox(height: 30),
 
               //Banner de investimento
               BannerInvestimento(),
