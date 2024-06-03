@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -47,10 +48,43 @@ class logoTopoMenu extends StatelessWidget {
                   color: AppCores.CinzaBotaoUser,
                   shape: BoxShape.circle,
                 ),
-                child: const Icon(
-                  Icons.person,
-                  size: tamanhoFixoIcons,
-                  color: AppCores.BrancoCards,
+                child: GestureDetector(
+                  onTap: () {
+                    showModalBottomSheet(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return SizedBox(
+                          height: 200,
+                          child: GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                  context: context,
+                                  builder: (context) {
+                                    return const Center(
+                                        child: CircularProgressIndicator());
+                                  });
+
+                              FirebaseAuth.instance.signOut();
+                              Navigator.of(context).pop();
+                            },
+                            child: const Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Deslogar'),
+                                SizedBox(width: 5),
+                                Icon(Icons.logout_sharp),
+                              ],
+                            ),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                  child: const Icon(
+                    Icons.person,
+                    size: tamanhoFixoIcons,
+                    color: AppCores.BrancoCards,
+                  ),
                 ),
               ),
             ],
